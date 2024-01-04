@@ -9,6 +9,15 @@ $(document).keypress(function() {
     }
 });
 
+$("button").on("click", function() {
+            if(!started) {
+            $("h1").text("Level 1")
+            var clicked  = $(this).attr("id");
+            randomSequence.push(clicked);
+            started = true;
+            }
+        });
+
 $("button").click(function() {
     var clickedButton = $(this).attr("id");
 
