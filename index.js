@@ -58,9 +58,12 @@ function checkAnswer(answer) {
         setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200);
-
-        $("#header").text("Game Over! Press any key to restart.");
-        startOver();
+        $("#header").html("Game Over!<br><span style = 'font-size: 1.8rem;'>Click here to restart.</span><br>");
+     
+        $("h1").click(function () {
+            location.reload();
+        });
+           startOver();
     }
 }
 
