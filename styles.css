@@ -1,0 +1,82 @@
+
+body {
+    margin: 0;
+    height: 70vh;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: -3rem;   
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+    
+} 
+
+.wrapper{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+}
+
+.square{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 20%;
+    border: solid 10px black;
+}
+
+.one {
+    background-color: red;
+   
+}
+.two {
+    background-color: green;
+  
+}
+
+.three {
+    background-color: blue;
+    
+}
+
+.four {
+    background-color: yellow;
+}
+
+@media(max-width: 700px){
+    .square{
+        height: 9rem;
+        width: 9rem;
+        border-radius: 15%;
+        border: solid 10px black;
+    }
+}
+
+@media(max-width: 400px){
+    .square{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 15%;
+        border: solid 10px black;
+    }
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
