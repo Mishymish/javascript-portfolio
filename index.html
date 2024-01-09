@@ -4,12 +4,11 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <h1 id="header">Press a key to start!</h1>
 <div class="wrapper">
 <div class="container">
@@ -19,6 +18,21 @@
     <button class = "square four" id = "yellow"></button>
 </div>
 </div>
+
+<div id="instruction-dialog" class="dialog">
+    <div class="dialog-content">
+        <h2>Game Instructions</h2>
+        <p>Welcome to the game! Follow these instructions:</p>
+        <ul>
+            <li>Watch as the computer generates a sequence of colored buttons.</li><br>
+            <li>After the computer displays the sequence, your turn begins. Repeat the exact sequence by clicking on the corresponding colored buttons.</li><br>
+            <li>The computer will add a new color to the sequence, making it longer.</li><br>
+            <li>If you get the sequence wrong, the game will end.</li><br>
+        </ul>
+        <button onclick="closeDialog()" id="closeButton">Close</button>
+    </div>
+</div>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
